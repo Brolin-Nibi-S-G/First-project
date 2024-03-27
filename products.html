@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cafe</title>
+    <link rel="StyleSheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <style>
+      
+    .carousel-item img{
+         height: 650px;
+         width: 100%;
+    }
+    .d-flex button{
+      color:black
+      
+    }
+   .d-flex button:hover{
+    background-color: black;
+  }
+.container a{
+  text-decoration: none;
+  color:red;}
+
+.IMG1
+ {
+  margin: 20px;
+  border: 1px solid white;
+  box-shadow: 5px 0px 5px 0px;
+  border-radius: 20px 0px 20px 0px;
+}
+.col:hovr{
+  transform:scale(1.05);
+
+}
+.contai col{
+  border: none;
+ 
+}
+.contai{
+  padding: 50px;
+}
+.contai button{
+  border: 1px solid black;
+  padding:10px;
+}
+
+  .card {
+  border: none;
+  border-radius: 20px 5px 20px 5px;
+  box-shadow: 10px 5px 10px 5px rgba(22, 22, 26, 0.18);
+}
+
+      .img2{
+    border:1px solid black;
+    border-radius: 30px;
+    background-color: black;
+  }
+  .colu{
+    background-color: rgb(122, 106, 106);
+    color: white;
+    padding: 50px;
+    font-size: 10px;
+    justify-content: space-evenly;
+  }
+ 
+  .card {
+  border: none;
+  border-radius: 20px 5px 20px 5px;
+  box-shadow: 10px 5px 10px 5px rgba(22, 22, 26, 0.18);
+}
+
+.nav-item{
+  padding: 2%;
+  }
+  
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  width: 2rem;
+  height: 2rem;
+}
+@media screen and (min-width: 577px) {
+  .cards-wrapper {
+    display: flex;
+  }
+  .card {
+    margin: 0 0.5em;
+    width: ;
+  }
+  .image-wrapper {
+    height: 20vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
+
+body {
+  margin: 0;
+  height: calc(100vh - 8em);
+  font-family: "Muli", sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin: 1.5em;
+}
+
+.entry img {
+  width: 35%;
+  border-radius: 50%;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  animation: carouselAnim 50s infinite alternate linear;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  background: #fff;
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .items {
+    animation: carouselAnim 35s infinite alternate linear;
+  }
+  
+  @keyframes carouselAnim {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(calc(-100% + (2 * 300px)));
+    }
+  }
+}
+
+.entry p {
+  text-align: center;
+  padding: 1em;
+}
+
+.name {
+  font-weight: bold;
+}
+
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-100% + (5 * 300px)));
+  }
+}
+
+.container .faders {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.faders .right,
+.faders .left {
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+}
+
+.right {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.navbar{
+    height: 70px;
+}
+.navbar-brand img{
+height: 50px;
+width: 50px;
+}
+
+
+
+ 
+</style>
+</head>
+<body style="background-color: antiquewhite;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./logo.png" height="50" width="50"></a><h1 style="font-size:29px;">THE COZZY CUP</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="D:\nibi1\Cafe\cafe.html" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="D:\nibi1\Cafe\products.html">Products</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Beans</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li></ul></li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="D:\nibi1\Cafe\about.html">About</a>
+                  </li>
+                </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" >Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+          
+            <h1 style="font-size: 30px; font-family: open sans;">NEW LAUNCH</h1>
+<div class="container">
+  <div class="faders">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <div class="items">
+    <div class="entry">
+      <p class="name">Colombian Narino 200 grams</p>
+      <img src="./d7.png" alt="Smiling person" />
+      <p class="quote">Rs: 250/-</p>
+    </div>
+    <div class="entry">
+      <p class="name">Espresso Glass Set</p>
+      <img src="./d8.png" alt="Smiling person" />
+      <p class="quote">"Rs: 300/-"</p>
+    </div>
+    <div class="entry">
+      <p class="name">W Dripper</p>
+      <img src="./d1.png" alt="Smiling person" />
+      <p class="quote">"Rs: 120/-"</p>
+    </div>
+    <div class="entry">
+      <p class="name">Glass Server For W Dripper 750Ml</p>
+      <img src="./d2.png" alt="Smiling person" />
+      <p class="quote">"Rs: 175/-"</p>
+    </div>
+    <div class="entry">
+      <p class="name">Glass Server For W Dripper 400Ml</p>
+      <img src="./d3.png" alt="Smiling person" />
+      <p class="quote">"Rs: 125/-"</p>
+    </div>
+    <div class="entry">
+      <p class="name">W Flat Bottom Filter</p>
+      <img src="./d4.png" alt="Smiling person" />
+      <p class="quote">"Rs: 280/-"</p>
+    </div>
+    <div class="entry">
+      <p class="name">W Cone Filter</p>
+      <img src="./d5.png" alt="Smiling person" />
+      <p class="quote">"Rs: 300/-"</p>
+    </div>
+    <div class="entry">
+      <p class="name">Ethiopian Aricha 200 grams </p>
+      <img src="./d6.png" alt="Smiling person" />
+      <p class="quote">"Rs: 350/-"</p>
+    </div>
+  </div>
+</div>   
+
+    <h1 style="font-size: 30px; font-family: open sans;">TOP SELLING</h1>
+<BR>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-sm-3">
+        <div class="IMG1">
+        <img src="c1.png" width="250" height="200">
+        <center><h3 style="font-size: 15px;">LIMITED EDITION</h3>
+        <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="IMG1">
+        <img src="c2.png" width="250" height="200">
+        <center><h3 style="font-size: 15px;">MICROLOT</h3>
+          <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+      </div></div>
+      <div class="col-sm-3">
+        <div class="IMG1">
+        <img src="c3.png" width="250" height="200">
+        <center><h3 style="font-size: 15px;">REGIONAL SELECTION</h3>
+          <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+      </div></div>
+
+      <div class="col-sm-3">
+        <div class="IMG1">
+        <img src="c4.png" width="250" height="200">
+        <center><h3 style="font-size: 15px;">GREEN BEAN</h3>
+          <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+      </div></div></div>
+      <div class="row">
+      <div class="col-sm-3">
+        <div class="IMG1">
+        <img src="c5.png" width="250" height="200">
+        <center><h3 style="font-size: 15px;">MUGS</h3>
+          <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+      </div></div>
+      <div class="col-sm-3">
+        <div class="IMG1">
+        <img src="c6.png" width="250" height="200">
+        <center><h3 style="font-size: 15px;">GIFT & MORE</h3>
+          <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+      </div></div>
+      <div class="col-sm-3">
+        <div class="IMG1">
+        <img src="c7.png" width="250" height="200">
+        <center><h3 style="font-size: 15px;">V12 PRIVATE BLEND</h3>
+          <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+      </div></div>
+      <div class="col-sm-3">
+        <div class="IMG1">
+        <img src="c8.png" width="250" height="200">
+        <center><h3 style="font-size: 15px;">CLASSIC COLLECTION</h3>
+          <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+      </div></div></div>
+  </div><br>
+
+  <footer style="background-color: #212529;"><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+          <img src="./01.png" height="150" width="150">
+        </div>
+        <div class="col-sm-2">
+          <img src="./02.png" height="150" width="150">
+        </div>
+        <div class="col-sm-2">
+          <img src="./03.png" height="150" width="150">
+        </div>
+        <div class="col-sm-2">
+          <img src="./04.png" height="150" width="150">
+        </div>
+        <div class="col-sm-2">
+          <img src="./05.png" height="150" width="150">
+        </div><div class="col-1"></div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <p style="color:white">THE COZZY CUP<br>
+          <span style="font-size: 15px;">EASY ORDERING APPLICATION</span</p>
+         <pre><img src="./apple_store.png" height="30px" width="100px">   <img src="./google_play.png" height="30px" width="100px">   </pre>
+        </div>
+        <div class="col-sm-4">
+          <p style="color:white">WE'RE ALWAYS HERE TO HELP<br>
+            <span style="font-size: 15px;">Reach out to us through any of these support method</span><br><br>
+           <img src="./phone1.png" height="20" width="15"> +91 97654342134<br><br>
+           <img src="./email.png" height="18" width="20"> thecozzycup@gmail.com</p>
+        </div>
+        
+        <div class="col-sm-4">
+          <p style="color:white">FOLLOW US<br>
+            <span style="font-size: 15px;">For latest update visit</span><br><br>
+        <pre><img src="./facebook.webp" height="25" width="25">  <img src="./insta.webp" height="25" width="25">  <img src="./v.webp" height="25" width="25"></pre>
+        </div>
+      </div>
+    </div>
+  </footer>
+   
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  
+
+   </body>
+   </html>          
+            
