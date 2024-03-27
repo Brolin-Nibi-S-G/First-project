@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cafe</title>
+    <link rel="StyleSheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <style>
+    .carousel-item img{
+         height: 650px;
+         width: 100%;
+    }
+    .d-flex button{
+      color:black
+      
+    }
+   .d-flex button:hover{
+    background-color: black;
+  }
+.container a{
+  text-decoration: none;
+  color:red;}
+
+.IMG1
+ {
+  margin: 20px;
+  border: 1px solid white;
+  box-shadow: 5px 0px 5px 0px;
+  border-radius: 20px 0px 20px 0px;
+}
+.col:hovr{
+  transform:scale(1.05);
+
+}
+.contai col{
+  border: none;
+ 
+}
+.contai{
+  padding: 50px;
+}
+.contai button{
+  border: 1px solid black;
+  padding:10px;
+}
+.nav-item{
+  padding: 2%;
+  }
+  .img2{
+    border:1px solid black;
+    border-radius: 30px;
+    background-color: black;
+  }
+  .colu{
+    background-color: rgb(122, 106, 106);
+    color: white;
+    padding: 50px;
+    font-size: 10px;
+    justify-content: space-evenly;
+  }
+ 
+  .card {
+  border: none;
+  border-radius: 20px 5px 20px 5px;
+  box-shadow: 10px 5px 10px 5px rgba(22, 22, 26, 0.18);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  width: 2rem;
+  height: 2rem;
+}
+@media screen and (min-width: 577px) {
+  .cards-wrapper {
+    display: flex;
+  }
+  .card {
+    margin: 0 0.5em;
+    width: ;
+  }
+  .image-wrapper {
+    height: 20vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ 
+</style>
+</head>
+<body style="background-color: antiquewhite;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./logo.png" height="50" width="50"></a><h1 style="font-size:29px;">THE COZZY CUP</h1>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="D:\nibi1\Cafe\cafe.html" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="D:\nibi1\Cafe\products.html">Products</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Beans</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li></ul></li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="D:\nibi1\Cafe\about.html">About</a>
+                  </li>
+                
+              
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" >Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="D:\nibi1\Cafe\bann1.jpg" class="d-block w-100 mt-0 mb-0 me-0 ms-0 " alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="D:\nibi1\Cafe\ban1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="D:\nibi1\Cafe\bann4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+             
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><br>
+      <div class="text-center"><h2 style="font-family: Open Sans; font-size: 16px;">BROWSE MORE THAN 200 PRODUCTS WITHIN THE COZZY CAFE COLLECTION</h2>
+        <h2 style="font-family: Open Sans; font-size: 29px;">WHICH OPTION IS RIGHT FOR ME?</div>
+      <br>
+      
+        <div class="container">
+          <div class="row">
+            
+            <div class="col">
+              <div class="IMG1">
+              <img src="c1.png" width="250" height="200">
+              <center><h3 style="font-size: 15px;">LIMITED EDITION</h3>
+              <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+              </div>
+            </div>
+            <div class="col">
+              <div class="IMG1">
+              <img src="c2.png" width="250" height="200">
+              <center><h3 style="font-size: 15px;">MICROLOT</h3>
+                <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+            </div></div>
+            <div class="col">
+              <div class="IMG1">
+              <img src="c3.png" width="250" height="200">
+              <center><h3 style="font-size: 15px;">REGIONAL SELECTION</h3>
+                <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+            </div></div>
+            <div class="col">
+              <div class="IMG1">
+              <img src="c4.png" width="250" height="200">
+              <center><h3 style="font-size: 15px;">GREEN BEAN</h3>
+                <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+            </div></div>
+            <div class="col">
+              <div class="IMG1">
+              <img src="c5.png" width="250" height="200">
+              <center><h3 style="font-size: 15px;">MUGS</h3>
+                <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+            </div></div>
+            <div class="col">
+              <div class="IMG1">
+              <img src="c6.png" width="250" height="200">
+              <center><h3 style="font-size: 15px;">GIFT & MORE</h3>
+                <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+            </div></div>
+            <div class="col">
+              <div class="IMG1">
+              <img src="c7.png" width="250" height="200">
+              <center><h3 style="font-size: 15px;">V12 PRIVATE BLEND</h3>
+                <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+            </div></div>
+            <div class="col">
+              <div class="IMG1">
+              <img src="c8.png" width="250" height="200">
+              <center><h3 style="font-size: 15px;">CLASSIC COLLECTION</h3>
+                <a href=""><h4 style="font-size: 15px;">SHOP NOW</h4></a></center>
+            </div></div></div>
+        </div><br>
+       <div class="colu">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="col"><div class="img2"><pre style="font-size: 25px; font-family: Open Sans;">  Coffee Beans Subscription</pre>
+                <pre style="font-size: 17px; font-family: Open Sans;color:rgb(147, 144, 144)">    The Cozzy Cup coffee offers a monthly coffee 
+    subscription of freshly roasted micro-lot  
+    coffees from more than 50...</pre></div>
+            </div></div>
+            <div class="col mx-5">
+              <img src="cafesketch.png" width="300px" height="300">
+            </div>
+            <div class="col">
+              <div class="col"><div class="img2"><pre style="font-size: 25px; font-family: Open Sans;">  Whole Sale / Bulk Order</pre>
+                <pre style="font-size: 17px; font-family: Open Sans;color:rgb(147, 144, 144)">    Become our Wholesale Partner and offer our 
+    delicious coffees to your cafe, restaurant, 
+    boutique hotel, office, or online shop.</pre></div>
+            </div></div>
+              </div></div></div>
+            </div>
+          </div>
+        </div>
+       </div>
+       <br>
+
+       
+       <div class="text-center"><h1 style="font-size: 29px; font-family: Open Sans;">NEW LAUNCH</h1></div>
+       <br>
+       <div class="container d-flex">
+        <div class="row">
+          <div class="col-9">
+       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="a1.png" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Enamal Cactus Green Mug</h5>
+                  <p class="card-text">Rs: 170/-
+                    <br><s>250/-</s> 30% Offer 170/-  </p>
+                  <a href="#" class="btn btn-dark">Buy Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./a2.png" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Millennial Bronze Gold Mug</h5>
+                  <p class="card-text">Rs: 220/-
+                    <br><s>350/-</s> 30% Offer 220/-</p>
+                  <a href="#" class="btn btn-dark">Buy Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./a3.png" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Cold Tumbler</h5>
+                  <p class="card-text">Rs: 70/-
+                    <br><s>100/-</s> 30% Offer 70/-</p>
+                  <a href="#" class="btn btn-dark">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./a4.png" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Matt Black Tumbler</h5>
+                  <p class="card-text">Rs: 120/-
+                    <br><s>250/-</s> 30% Offer 120/-</p>
+                  <a href="#" class="btn btn-dark">Buy Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./a5.png" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">The Original 227 grams V12</h5>
+                  <p class="card-text">Rs: 150/-
+                    <br><s>220/-</s> 30% Offer 150/-</p>
+                  <a href="#" class="btn btn-dark">Buy Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./d1.png" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">W Dripper</h5>
+                  <p class="card-text">Rs: 170/-
+                    <br><s>200/-</s> 30% Offer 170/-</p>
+                  <a href="#" class="btn btn-dark">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./d4.png" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">W Flat Bottom Filter</h5>
+                  <p class="card-text">Rs: 120/-
+                    <br><s>250/-</s> 30% Offer 120/-</p>
+                  <a href="#" class="btn btn-dark">Buy Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./d7.png" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Colombian Narino 200 grams</h5>
+                  <p class="card-text">Rs: 200/-
+                    <br><s>320/-</s> 30% Offer 200/-</p>
+                  <a href="#" class="btn btn-dark">Buy Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="./d3.png" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Glass Server For W Dripper 400Ml</h5>
+                  <p class="card-text">Rs: 240/-
+                    <br><s>390/-</s> 30% Offer 240/-</p>
+                  <a href="#" class="btn btn-dark">Buy Now</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button></div>
+      </div>
+        <div class="col-1">
+          
+        </div>
+        
+          <div class="col-2 bg-dark text-light me-0 mt-3 mb-3">
+            <div class="text-center"><H1>LOOK NEW</H1><BR>
+              <h2>THE COZZY CUP</h2>
+             <pre>As the market evolves, 
+we continue to search 
+for new and innovative 
+products for your 
+ultimate shopping 
+experience… Here 
+are the newly launched 
+products to choose 
+from….</pre> 
+          </div></div>
+        </div></div>
+      
+      </div>
+       <br>
+        <div class="contai" style="background-color:rgb(122, 106, 106);">
+          <div class="container">
+            <div class="row">
+              
+              <div class="col">
+                <div class="text-center"><h1>THE COZZY CUP REWARDS PROGRAM</h1>
+                <h2>Much of Rewards !
+  
+                  Earn points and redeem them for great rewards.</h2><BR><br><br>
+                 <pre><button style="border-radius: 10px;">JOIN NOW</button>   <button style="border-radius: 10px;">VIEW MORE</button></pre> 
+              </div></div>
+              <div class="col-4">
+               <img src="card-image.png" width="450" height="350">
+               </div>
+                </div>
+              </div></div><br>
+             <div class="text-center "><h1 style="font-size: 25px; font-family: Open Sans;padding: 0rem 6rem;">THE COZZY CUP ONLINE STORE HAS EVERYTHING YOU NEED TO ENJOY THE PREMIUM CAFE EXPERIENCE IN YOUR OWN HOME.</h1>
+           <br>
+            </div>
+             
+            <div class="container">
+              <div class="row">
+                <div class="col-4">
+                  <img src="./txt1.png" height="300px" width="300px" class="img-responsive">
+                      <div class="text-center"><h4><b>Beans</b></h4> </div>
+                      <p>The secret behind The Cozzy Cup COFFEE exceptional coffee taste is the care that The Cozzy Cup COFFEE gives 100% pure Arabica coffee beans acquired from different regions of the world.
+                    </p></div>    
+                <div class="col-3">
+                  <img src="./txt2.png" height="300px" width="300px" class="img-responsive">
+                      <div class="text-center"><h4><b>Tea</b></h4> </div>
+                      <p>Grown and harvested at high altitudes between 4000 to 6000 ft above sea levels where the air is pure and ideal to produce excellent tasting teas filled with pleasing aromas.
+                    </p>
+                </div>
+              
+              
+                <div class="col-4">
+                  <img src="./txt3.png" height="300px" width="300px" class="img-responsive">
+                  <div class="text-center"><h4><b>Merchandise</b></h4> </div>
+                  <p>Our merchandise is developed through years of research and sourcing before we offer them with our brand.
+                </p>
+                </div></div>
+                <div class="row">
+                <div class="col-4">
+                  <img src="./txt4.png" height="300px" width="300px" class="img-responsive">
+                      <div class="text-center"><h4><b>Cozzy Cup Collection</b></h4> </div>
+                      <p>The Cozzy Cup collections are carefully selected by our experts to enjoy a mixture of endless and exciting Feelings to discover the mystery beyond the coffee
+                    </p>
+                </div>
+                <div class="col-4">
+                  <img src="./txt5.png" height="300px" width="300px" class="img-responsive">
+                  <div class="text-center"><h4><b>Gift</b></h4> </div>
+                  <p>Our gift products aims to bring dr.CAFE COFFEE Closer to your Home as we offer varieties of products which can be found in our cafe.
+                </p>
+                </div>
+              </div>
+            </div>
+              
+            <footer style="background-color: #212529;"><br>
+              <div class="container">
+                <div class="row">
+                  <div class="col-1"></div>
+                  <div class="col-2">
+                    <img src="./01.png" height="150" width="150">
+                  </div>
+                  <div class="col-2">
+                    <img src="./02.png" height="150" width="150">
+                  </div>
+                  <div class="col-2">
+                    <img src="./03.png" height="150" width="150">
+                  </div>
+                  <div class="col-2">
+                    <img src="./04.png" height="150" width="150">
+                  </div>
+                  <div class="col-2">
+                    <img src="./05.png" height="150" width="150">
+                  </div><div class="col-1"></div>
+                </div>
+              </div>
+              <br>
+              <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                    <p style="color:white">THE COZZY CUP<br>
+                    <span style="font-size: 15px;">EASY ORDERING APPLICATION</span</p>
+                   <pre><img src="./apple_store.png" height="30px" width="100px">   <img src="./google_play.png" height="30px" width="100px">   </pre>
+                  </div>
+                  <div class="col-4">
+                    <p style="color:white">WE'RE ALWAYS HERE TO HELP<br>
+                      <span style="font-size: 15px;">Reach out to us through any of these support method</span><br><br>
+                     <img src="./phone1.png" height="25" width="20"> +91 97654342134<br><br>
+                     <img src="./email.png" height="18" width="20"> thecozzycup@gmail.com</p>
+                  </div>
+                  <div class="col-4">
+                    <p style="color:white">FOLLOW US<br>
+                      <span style="font-size: 15px;">For latest update visit</span><br><br>
+                  <pre><img src="./facebook.webp" height="25" width="25">  <img src="./insta.webp" height="25" width="25">  <img src="./v.webp" height="25" width="25"></pre>
+                  </div>
+                </div>
+              </div>
+            </footer>
+             
+          
+
+      <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+      <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+      
+</body>
+</html>
+      
